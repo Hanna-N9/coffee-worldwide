@@ -46,7 +46,7 @@ Contributions are welcome! If you have any suggestions, bug reports, or improvem
 
 - Meaghan Sharrard
 - Hanna Negash
-- Xen
+- Xen Contreras
 
 ## Acknowledgments
 
