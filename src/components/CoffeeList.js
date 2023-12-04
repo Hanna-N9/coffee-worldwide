@@ -1,10 +1,15 @@
 import React from "react";
 import Coffee from "./Coffee";
 
-function CoffeeList(){
+function CoffeeList( { coffees } ){
     return (
         <div>
-            <Coffee />
+            {coffees.map((coffee) => 
+                <Coffee 
+                    key={coffee.id}
+                    coffee={coffee}
+                />
+            )}
         </div>
     )
 }
