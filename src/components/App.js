@@ -18,7 +18,9 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <HomePage coffees={coffees}/>
+      <HomePage 
+        coffees={coffees}
+      />
       <Search />
       <NewCoffeeForm />
       <ErrorPage />
