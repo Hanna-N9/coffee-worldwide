@@ -1,11 +1,7 @@
 import React, { useState } from "react";
-import { useOutletContext } from "react-router-dom";
 
 function Coffee({ coffee }) {
   const [isClicked, setAsClicked] = useState(false);
-
-  const coffees = useOutletContext();
-  console.log(coffees);
 
   function handleClick() {
     setAsClicked(isClicked => !isClicked);
