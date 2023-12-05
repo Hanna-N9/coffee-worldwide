@@ -1,17 +1,17 @@
 import React from "react";
 import Coffee from "./Coffee";
+import { useOutletContext } from "react-router-dom";
 
-function CoffeeList( { coffees } ){
-    return (
-        <div>
-            {coffees.map((coffee) => 
-                <Coffee 
-                    key={coffee.id}
-                    coffee={coffee}
-                />
-            )}
-        </div>
-    )
+function CoffeeList() {
+  const [coffees] = useOutletContext();
+
+  return (
+    <div>
+      {coffees.map(coffee => (
+        <Coffee key={coffee.id} coffee={coffee} />
+      ))}
+    </div>
+  );
 }
 
 export default CoffeeList;
