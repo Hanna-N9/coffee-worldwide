@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Coffee from "./Coffee";
 import { useOutletContext } from "react-router-dom";
 
