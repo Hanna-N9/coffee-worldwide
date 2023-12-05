@@ -18,7 +18,7 @@ function App() {
     <div className="App">
       <Header />
       <NavBar />
-      <Outlet context={[coffees]} />
+      <Outlet context={{coffees, setCoffees}} />
     </div>
   );
 }
