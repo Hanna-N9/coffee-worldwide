@@ -1,16 +1,21 @@
-import React from "react";
-import Header from "./Header";
+import React, { useEffect, useState } from "react";
 import CoffeeList from "./CoffeeList";
+import logo from "./logo.png";
+import NavBar from "./NavBar";
+import NewCoffeeForm from "./NewCoffeeForm";
+import Search from "./Search";
+import ErrorPage from "./ErrorPage";
 
-function HomePage( { coffees } ){
+import 'semantic-ui-css/semantic.min.css';
+
+function HomePage(){
+  
     return (
-        <div>
-            <Header />
-            <CoffeeList 
-                coffees={coffees}
-            />
-        </div>
-    )
-}
+      <div className="App">
+        <NavBar />
+        <img src={logo} alt="logo"/>
+      </div>
+    );
+  }
 
 export default HomePage;
