@@ -1,21 +1,7 @@
-import React, { useEffect, useState } from "react";
-import CoffeeList from "./CoffeeList";
-import logo from "./logo.png";
-import NavBar from "./NavBar";
-import NewCoffeeForm from "./NewCoffeeForm";
-import Search from "./Search";
-import ErrorPage from "./ErrorPage";
+import React from "react";
 
-import 'semantic-ui-css/semantic.min.css';
-
-function HomePage(){
-  
-    return (
-      <div className="App">
-        <NavBar />
-        <img src={logo} alt="logo"/>
-      </div>
-    );
-  }
+function HomePage() {
+  return <h1>Home page</h1>;
+}
 
 export default HomePage;

@@ -1,13 +1,22 @@
-import "../App.css";
-import React from "react";
-import HomePage from "./HomePage";
-import 'semantic-ui-css/semantic.min.css';
+import React, { useEffect, useState } from "react";
+import { Outlet } from "react-router-dom";
+import Header from "./Header";
+import NavBar from "./NavBar";
 
 function App() {
+  const [coffees, setCoffees] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:3001/coffee")
+      .then(res => res.json())
+      .then(data => setCoffees(data));
+  }, []);
 
   return (
     <div className="App">
-      <HomePage/>
+      <Header />
+      <NavBar />
+      <Outlet context={[coffees]} />
     </div>
   );
 }

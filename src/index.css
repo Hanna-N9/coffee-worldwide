@@ -12,3 +12,15 @@ code {
     monospace;
 }
 
+.navLink{
+  display: inline-block;
+  text-decoration: none;
+  width: 7%;
+  background: black; 
+  color: white;
+}
+
+.active {
+  color: blue;
+}
+
