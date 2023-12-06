@@ -44,7 +44,8 @@ code {
 }
 
 .active {
-  color: gray;
+  background-color: gray;
+
 }
 
 .newcoffeeform {
@@ -92,16 +93,6 @@ button:hover {
   background: #333;
 }
 
-
-#error-page{
-  text-align: center;
- }
- 
- #error-page p{
- font-size: 1.5em;
- color: darkred;
- }
- 
  #card:hover{
    transform: scale(1.2); 
  }
@@ -115,4 +106,44 @@ button:hover {
 
  #search::placeholder {
   font-size: 16px;
+}
+
+#error{
+  background-image: url(./images/spilledcoffee.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  padding: 18.5% 0;
+  text-align: center;
+ }
+
+ #main-error{
+  width:28%;
+  text-align: center;
+  padding: 2%;
+  margin: 0 auto;
+ }
+
+ #error h2{
+  color: white;
+  font-size: 2em;
+  
+ }
+ 
+ #error p{
+ font-size: 1.9em;
+ color: red;
+ font-weight: bold;
+ }
+
+ #error button{
+  background-color: rgb(11, 36, 102);
+  cursor: pointer;
+  width: 40%;
+  font-size: 1.4em;
+  line-height: 1.2;
+ }
+  
+ #error button:hover{
+  transform: scale(1.15); 
 }
