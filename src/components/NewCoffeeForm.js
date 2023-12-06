@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useOutletContext } from "react-router-dom";
+import { useOutletContext, useNavigate } from "react-router-dom";
 import { ReactComponent as CoffeeIcon } from './coffeecup.svg';
 
 function NewCoffeeForm() {
@@ -15,6 +15,7 @@ function NewCoffeeForm() {
   })
 
   const {filteredCoffees, setCoffees} = useOutletContext();
+  const nav = useNavigate();
 
   function handleSubmit(e){
     e.preventDefault();
@@ -50,6 +51,7 @@ function NewCoffeeForm() {
         rating: 0
     })
     alert(`You've submitted a new beverage!`);
+    nav("/coffee");
   }
 
   function handleChange(e){
@@ -159,7 +161,9 @@ function NewCoffeeForm() {
           ))}
         </div>
         <br />
-        <button type="submit">Add New Coffee</button>
+        <button 
+          type="submit"
+          style={{cursor: "pointer"}}>Add New Coffee</button>
       </form>
     </div>
   );
