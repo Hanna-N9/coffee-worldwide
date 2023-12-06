@@ -4,11 +4,11 @@ import { useOutletContext } from "react-router-dom";
 import Search from "./Search";
 
 function CoffeeList() {
-  const {filteredCoffees, setCoffees} = useOutletContext();
+  const { filteredCoffees } = useOutletContext();
 
   return (
     <div className="coffeeCard">
-      {coffees.map(coffee => (<><div className="card">
+      {filteredCoffees.map(coffee => (<><div className="card">
         <Coffee key={coffee.id} coffee={coffee} /> </div>
         </> ))}
       </div>

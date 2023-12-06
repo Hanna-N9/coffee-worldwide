@@ -88,6 +88,27 @@ button:hover {
   background: #333;
 }
 
+
+#error-page{
+  text-align: center;
+ }
+ 
+ #error-page p{
+ font-size: 1.5em;
+ color: darkred;
+ }
+ 
+ #card:hover{
+   transform: scale(1.2); 
+ }
+ 
+ #card{
+   width: 11.5%;
+   margin: auto;
+   display: block;
+ }
+
 #searchbar {
   border-radius: 10px;
 }
+
