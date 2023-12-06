@@ -7,6 +7,7 @@ import "@fontsource/league-spartan/400.css"; // Specify weight
 
 function App() {
   const [coffees, setCoffees] = useState([]);
+  const [search, setSearch] = useState("");
 
   useEffect(() => {
     fetch("http://localhost:3001/coffee")
@@ -14,11 +15,19 @@ function App() {
       .then(data => setCoffees(data));
   }, []);
 
+  function handleSearch(e){
+    setSearch(e.target.value)
+  }
+
+  const filteredCoffees = coffees.filter((c) => 
+    c.name.toLowerCase().includes(search.toLowerCase())
+  )
+
   return (
     <div className="App">
       <Header />
       <NavBar />
-      <Outlet context={{coffees, setCoffees}} />
+      <Outlet context={{filteredCoffees, setCoffees, handleSearch}} />
     </div>
   );
 }

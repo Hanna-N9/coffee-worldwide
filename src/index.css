@@ -49,3 +49,7 @@ button {
 button:hover {
   background: #333;
 }
+
+#searchbar {
+  border-radius: 10px;
+}
