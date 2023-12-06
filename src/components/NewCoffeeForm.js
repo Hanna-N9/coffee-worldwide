@@ -3,7 +3,9 @@ import { useOutletContext, useNavigate } from "react-router-dom";
 import { ReactComponent as CoffeeIcon } from "../images/coffeecup.svg";
 
 function NewCoffeeForm() {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
+  const { filteredCoffees, setCoffees } = useOutletContext();
+  const nav = useNavigate();
   const [formData, setFormData] = useState({
     name: "",
     recipe: "",
@@ -15,12 +17,9 @@ function NewCoffeeForm() {
     rating: 0,
   });
 
-  const { filteredCoffees, setCoffees } = useOutletContext();
-  const nav = useNavigate();
-
   function handleSubmit(e) {
     e.preventDefault();
-    navigate("/coffee");
+    nav("/coffee");
 
     const newCoffee = {
       name: formData.name,
@@ -163,11 +162,11 @@ function NewCoffeeForm() {
         </div>
         <br />
         <button 
-          type="submit"
-          style={{cursor: "pointer"}}>Add New Coffee</button>
+          type="submit">Add New Coffee</button>
       </form>
     </div>
   );
+
 }
 
 export default NewCoffeeForm;

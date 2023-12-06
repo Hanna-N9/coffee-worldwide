@@ -69,6 +69,7 @@ function SingleCoffeeDetails() {
       </div>
     </>
   );
+  
 }
 
 export default SingleCoffeeDetails;
