@@ -6,7 +6,7 @@
       "recipe": "2 shots of espresso",
       "image": "https://evolvecoffeebar.co.uk/wp-content/uploads/2013/06/coffee_1-2-300x300.jpg",
       "caffeine": 40,
-      "roast": "dark",
+      "roast": "Dark",
       "coffeeshop": "Ninth Street Espresso",
       "location": "New York City, NY",
       "rating": 3
@@ -17,7 +17,7 @@
       "recipe": "1 shot of espresso and 1 shot of steamed milk",
       "image": "https://www.caffesociety.co.uk/assets/recipe-images/latte-small.jpg",
       "caffeine": 30,
-      "roast": "medium",
+      "roast": "Medium",
       "coffeeshop": "Grand Central Coffee Company",
       "location": "New York City, NY",
       "rating": 2
@@ -28,7 +28,7 @@
       "recipe": "1 shot of espresso, 1 shot of chocolate syrup, and 1 shot of steamed milk",
       "image": "https://www.caffesociety.co.uk/assets/recipe-images/mocha-small.jpg",
       "caffeine": 40,
-      "roast": "medium",
+      "roast": "Medium",
       "coffeeshop": "ABONAVIDA",
       "location": "Madrid, Spain",
       "rating": 4
@@ -39,7 +39,7 @@
       "recipeLink": "https://www.caffesociety.co.uk/how-to-make-a-cappuccino",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Cappuccino_at_Sightglass_Coffee.jpg/1200px-Cappuccino_at_Sightglass_Coffee.jpg",
       "caffeine": 35,
-      "roast": "medium",
+      "roast": "Medium",
       "coffeeshop": "Er Baretto",
       "location": "Rome, Italy",
       "rating": 2
@@ -50,7 +50,7 @@
       "recipe": "1 shot of espresso and 1 shot of steamed milk",
       "image": "https://cdn.buttercms.com/AB7ud4YSE6nmOX0iGlgA",
       "caffeine": 30,
-      "roast": "medium",
+      "roast": "Medium",
       "coffeeshop": "Mozart Cafe",
       "location": "Rome, Italy",
       "rating": 1
@@ -61,7 +61,7 @@
       "recipe": "1 shot of espresso and 2 shots of steamed milk",
       "image": "https://cafebarista.ca/cdn/shop/articles/comment-faire-flat-white-100918_1600x.png?v=1693057510",
       "caffeine": 40,
-      "roast": "medium",
+      "roast": "Medium",
       "coffeeshop": "Coffee Alchemy",
       "location": "NSW, Australia",
       "rating": 1
@@ -72,7 +72,7 @@
       "recipe": "Coffee beans and water",
       "image": "https://majestycoffee.com/cdn/shop/articles/black_coffee_800x.jpg?v=1684059071",
       "caffeine": 60,
-      "roast": "medium",
+      "roast": "Dark",
       "coffeeshop": "AKKOO COFFEE",
       "location": "Addis Ababa, Ethiopia",
       "rating": 4
@@ -83,7 +83,7 @@
       "recipe": "1 shot of espresso and 2 scoops of gelato",
       "image": "https://leitesculinaria.com/wp-content/uploads/2016/12/affogato-1.jpg",
       "caffeine": 30,
-      "roast": "medium",
+      "roast": "Light",
       "coffeeshop": "Caffe Florian",
       "location": "Venice, Italy",
       "rating": 5
@@ -94,7 +94,7 @@
       "recipe": "1 shot of coffee and 1 shot of steamed milk",
       "image": "https://images.ctfassets.net/v601h1fyjgba/CCwO1JxpaUZpPLM7cas6j/6875a86a118947fe54825092c2fdd645/Cafe_Au_Lait.jpg",
       "caffeine": 35,
-      "roast": "medium",
+      "roast": "Medium",
       "coffeeshop": "Matamata Coffee",
       "location": "Paris, France",
       "rating": 3
@@ -105,7 +105,7 @@
       "recipe": "1 shot of espresso and 1 shot of steamed milk",
       "image": "https://www.acouplecooks.com/wp-content/uploads/2020/10/how-to-make-a-macchiato-008.jpg",
       "caffeine": 40,
-      "roast": "medium",
+      "roast": "Medium",
       "coffeeshop": "Lomi",
       "location": "Paris, France",
       "rating": 2
@@ -116,7 +116,7 @@
       "recipe": "1 ½ ounces of Irish whiskey and 6 ounces of hot freshly brewed coffee",
       "image": "https://www.jessicagavin.com/wp-content/uploads/2021/03/irish-coffee-14-1200-500x500.jpg",
       "caffeine": 60,
-      "roast": "medium",
+      "roast": "Light",
       "coffeeshop": "CoffeeCo at Cloud Nine",
       "location": "Dublin, Ireland",
       "rating": 3
@@ -127,7 +127,7 @@
       "recipe": "Powder-like ground coffee and sweetened to the drinker's taste",
       "image": "https://foolproofliving.com/wp-content/uploads/2019/03/Turkish-Coffee-Recipe.jpg",
       "caffeine": 60,
-      "roast": "medium",
+      "roast": "Dark",
       "coffeeshop": "Mandabatmaz",
       "location": "Istanbul, Turkey",
       "rating": 4
@@ -138,7 +138,7 @@
       "recipe": "French roast coffee grounds, hot water, condensed milk, and a Vietnamese coffee filter",
       "image": "https://www.carnation.co.uk/sites/default/files/2023-07/38.png",
       "caffeine": 60,
-      "roast": "medium",
+      "roast": "Medium",
       "coffeeshop": "OKKIO",
       "location": "Ho Chi Minh City, Vietnam",
       "rating": 5
@@ -149,7 +149,7 @@
       "recipe": "1/2 pound of ground coffee and 6 cups of cold water",
       "image": "https://www.cookingclassy.com/wp-content/uploads/2023/07/cold-brew-2.jpg",
       "caffeine": 60,
-      "roast": "medium",
+      "roast": "Dark",
       "coffeeshop": "Little Nap Coffee Stand",
       "location": "Tokyo, Japan",
       "rating": 1
@@ -160,7 +160,7 @@
       "recipe": "1 cup of drip coffee and 1 shot of espresso",
       "image": "https://www.roastycoffee.com/wp-content/uploads/Red-Eye-Coffee.jpg",
       "caffeine": 100,
-      "roast": "medium",
+      "roast": "Dark",
       "coffeeshop": "Fuglen Tokyo",
       "location": "Tokyo, Japan",
       "rating": 3
@@ -171,7 +171,7 @@
       "recipe": "1 shot of espresso, sugar or sweetener, ice, and optional milk",
       "image": "https://valentinascorner.com/wp-content/uploads/2022/07/Easy-Iced-Caramel-Macchiato.jpg",
       "caffeine": 60,
-      "roast": "medium",
+      "roast": "Medium",
       "coffeeshop": "Elm Coffee Roasters",
       "location": "Seattle, WA",
       "rating": 4

@@ -1,22 +1,29 @@
-import { useEffect, useState } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams, useNavigate, useOutletContext } from "react-router-dom";
 
 function SingleCoffeeDetails() {
-  const [coffee, setCoffee] = useState([]);
+  const { handleDelete, coffees } = useOutletContext();
   const { id } = useParams();
-
-  useEffect(() => {
-    fetch(`http://localhost:3001/coffee/${id}`)
-      .then(res => res.json())
-      .then(setCoffee);
-  }, [id]);
+  const coffee = coffees.find(c => c.id == id)
+  const nav = useNavigate()
 
   const renderCoffeeCups = rating => {
     const coffeeCupEmoji = "☕️";
     return coffeeCupEmoji.repeat(rating);
   };
 
-  <Link to={`/coffee/${coffee.id}/recipe`}>link</Link>;
+  const handleClick = (e) =>{
+    e.preventDefault();
+    fetch(`http://localhost:3001/coffee/${id}`, {
+		  method: "DELETE",
+	  })
+		  .then((res) => res.json())
+		  .then(() => handleDelete(id))
+      nav("/coffee")
+  }
+
+  if(!coffee){
+    return <p>Loading...</p>
+  }
 
   return (
     <>
@@ -57,6 +64,8 @@ function SingleCoffeeDetails() {
         <div>
           <b>Rating:</b> {renderCoffeeCups(coffee.rating)}
         </div>
+        <br />
+        <button onClick={handleClick}>Delete Coffee</button>
       </div>
     </>
   );

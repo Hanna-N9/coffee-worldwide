@@ -16,6 +16,7 @@ function NewCoffeeForm() {
   });
 
   const { filteredCoffees, setCoffees } = useOutletContext();
+  const nav = useNavigate();
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -52,6 +53,7 @@ function NewCoffeeForm() {
       rating: 0,
     });
     alert(`You've submitted a new beverage!`);
+    nav("/coffee");
   }
 
   function handleChange(e) {
@@ -160,7 +162,9 @@ function NewCoffeeForm() {
           ))}
         </div>
         <br />
-        <button type="submit">Add New Coffee</button>
+        <button 
+          type="submit"
+          style={{cursor: "pointer"}}>Add New Coffee</button>
       </form>
     </div>
   );

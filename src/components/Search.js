@@ -2,9 +2,10 @@ import React from "react";
 import { useOutletContext } from "react-router-dom";
 
 function Search(){
-    const {handleSearch} = useOutletContext();
+    const {handleSearch, setSortName} = useOutletContext();
 
     return (
+        <>
         <div>
         <h2 htmlFor="search" className="headerSpace"></h2>
         <input
@@ -17,7 +18,12 @@ function Search(){
                     borderRadius: "5px" }}
             onChange={handleSearch}
         />
+        <button 
+            style={{ marginLeft: "10px", cursor:"pointer" }}
+            onClick={() => setSortName("name")}
+        >Sort</button>
         </div>
+        </>
     )    
 }
 
