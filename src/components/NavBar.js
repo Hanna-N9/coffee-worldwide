@@ -3,7 +3,9 @@ import "../App.css";
 
 function NavBar() {
   return (
-    <nav>
+  
+     <nav>
+    
       <NavLink id="link" to="/" className="navLink">
         Home
       </NavLink>
@@ -14,6 +16,7 @@ function NavBar() {
         Add Drink
       </NavLink>
     </nav>
+  
   );
 }
 

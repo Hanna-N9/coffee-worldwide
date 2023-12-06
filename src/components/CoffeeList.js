@@ -6,11 +6,12 @@ function CoffeeList() {
   const {coffees, setCoffees} = useOutletContext();
 
   return (
-    <div>
-      {coffees.map(coffee => (
-        <Coffee key={coffee.id} coffee={coffee} />
-      ))}
-    </div>
+    <div className="coffeeCard">
+      {coffees.map(coffee => (<><div className="card">
+        <Coffee key={coffee.id} coffee={coffee} /> </div>
+        </> ))}
+      </div>
+    
   );
 }
 
