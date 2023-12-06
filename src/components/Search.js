@@ -6,7 +6,7 @@ function Search(){
 
     return (
         <div>
-        <h2 htmlFor="search" className="headerSpace">Coffee Drinks:</h2>
+        <h2 htmlFor="search" className="headerSpace"></h2>
         <input
             type="text"
             id="search"

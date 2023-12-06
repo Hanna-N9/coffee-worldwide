@@ -10,9 +10,13 @@ function CoffeeList() {
     <>
     <Search />
     <div className="coffeeCard">
-      {filteredCoffees.map(coffee => (<><div className="card">
-        <Coffee key={coffee.id} coffee={coffee} /> </div>
-        </> ))}
+      {filteredCoffees.map(coffee => (
+      <>
+        <div className="card">
+          <Coffee key={coffee.id} coffee={coffee} /> 
+        </div>
+      </> 
+      ))}
       </div>
       </>
   );

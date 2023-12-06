@@ -1,7 +1,5 @@
 body {
     font-family: "League Spartan";
-   
-
   }
 
 code {
@@ -11,7 +9,7 @@ code {
 
 .coffeeCard {
   display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
     padding: 20px;
    
@@ -103,9 +101,10 @@ button:hover {
  }
  
  #card{
-   width: 11.5%;
+   /* width: 11.5%; */
+   width: 100%;
    margin: auto;
-   display: block;
+   /* display: block; */
  }
 
  #search::placeholder {
