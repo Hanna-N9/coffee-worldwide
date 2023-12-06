@@ -8,6 +8,7 @@ function Header() {
       <img className="logo" src={logo} alt="logo" />
     </div>
   );
+  
 }
 
 export default Header;

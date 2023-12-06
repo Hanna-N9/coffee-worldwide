@@ -18,6 +18,7 @@ function CoffeeList() {
       </div>
       </>
   );
+  
 }
 
 export default CoffeeList;

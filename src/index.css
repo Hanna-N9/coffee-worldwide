@@ -7,6 +7,13 @@ code {
     monospace;
 }
 
+#card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  /* Add any other image styles here */
+}
+
 .coffeeCard {
   display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -57,11 +64,11 @@ code {
 .newcoffeeform span {
   cursor: pointer;
   font-size: 24px;
-  margin: 0 5px; /* Add margin for spacing between cups */
+  margin: 0 5px;
 }
 
 .newcoffeeform span.selected {
-  color: darkred; /* Set color to darkred when selected */
+  color: darkred;
 }
 
 .headerSpace{
@@ -87,6 +94,7 @@ button {
   font-size: 18px;
   border-radius: 10px;
   width: 10%;
+  cursor: pointer;
 }
 
 button:hover {
@@ -98,10 +106,8 @@ button:hover {
  }
  
  #card{
-   /* width: 11.5%; */
    width: 100%;
    margin: auto;
-   /* display: block; */
  }
 
  #search::placeholder {
@@ -146,4 +152,8 @@ button:hover {
   
  #error button:hover{
   transform: scale(1.15); 
+}
+
+.sort-button {
+  margin-left: 10px;
 }

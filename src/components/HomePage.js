@@ -7,6 +7,7 @@ function HomePage() {
             <h1 className="headerSpace">HOME</h1>
         </div>
     )
+    
 }
 
 export default HomePage;
