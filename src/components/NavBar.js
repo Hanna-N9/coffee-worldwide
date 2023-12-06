@@ -10,10 +10,10 @@ function NavBar() {
         Home
       </NavLink>
       <NavLink id="link" to="/coffee" className="navLink">
-        Coffee Drinks
+        List of Coffees
       </NavLink>
       <NavLink id="link" to="/form" className="navLink">
-        Add Drink
+        Add a Coffee!
       </NavLink>
     </nav>
   
