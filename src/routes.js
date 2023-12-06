@@ -1,9 +1,9 @@
 import App from "./components/App";
 import Home from "./components/HomePage";
 import ErrorPage from "./components/ErrorPage";
-import Coffee from "./components/Coffee";
 import CoffeeForm from "./components/NewCoffeeForm";
 import CoffeeList from "./components/CoffeeList";
+import SingleCoffeeDetails from "./components/SingleCoffeeDetails";
 
 const routes = [
   {
@@ -14,12 +14,6 @@ const routes = [
       {
         path: "/",
         element: <Home />,
-        children: [
-          {
-            path: "/coffee/:id",
-            element: <Coffee />,
-          },
-        ],
       },
       {
         path: "/coffee",
@@ -28,6 +22,10 @@ const routes = [
       {
         path: "/form",
         element: <CoffeeForm />,
+      },
+      {
+        path: "/coffee/:id",
+        element: <SingleCoffeeDetails />,
       },
     ],
   },
