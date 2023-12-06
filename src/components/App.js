@@ -27,7 +27,7 @@ function App() {
     <div className="App" style={{ display: 'inline'}}> 
     <Header />
     <NavBar /> 
-      <Outlet context={{filteredCoffees, setCoffees, handleSearch}} />
+      <Outlet context={{coffees, filteredCoffees, setCoffees, handleSearch}} />
     </div>
   );
 }

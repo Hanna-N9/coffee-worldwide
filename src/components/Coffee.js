@@ -12,7 +12,7 @@ function Coffee({ coffee }) {
           <img
             src={coffee.image}
             alt={coffee.name}
-            style={{ width: 200, height: 200 }}
+            style={{ width: 200, height: 200, borderRadius: "10px" }}
           />
         </Link>
       </div>
