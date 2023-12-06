@@ -56,7 +56,7 @@ function NewCoffeeForm() {
 
   return (
     <div onSubmit={handleSubmit}>
-      <h2>Add a new coffee beverage!</h2>
+      <h2 className="headerSpace">Add a new coffee beverage!</h2>
       <form>
       <div className="newcoffeeform">
         <input 

@@ -3,8 +3,8 @@ import logo from "./logo.png";
 
 function Header() {
   return (
-    <div>
-      <img src={logo} alt="logo" />
+    <div className="logobuffer">
+      <img className="logo" src={logo} alt="logo" />
     </div>
   );
 }
