@@ -6,12 +6,15 @@ function Search(){
 
     return (
         <div>
-        <h3 htmlFor="search" id="searchbar" className="headerSpace">Coffee Drinks:</h3>
+        <h2 htmlFor="search" className="headerSpace">Coffee Drinks:</h2>
         <input
             type="text"
             id="search"
             placeholder="Search..."
-            style={{ fontFamily: "League Spartan" }}
+            style={{fontFamily: "League Spartan", 
+                    width: "300px", 
+                    height: "40px",
+                    borderRadius: "5px" }}
             onChange={handleSearch}
         />
         </div>

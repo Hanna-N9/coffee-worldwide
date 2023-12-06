@@ -7,11 +7,14 @@ function CoffeeList() {
   const { filteredCoffees } = useOutletContext();
 
   return (
+    <>
+    <Search />
     <div className="coffeeCard">
       {filteredCoffees.map(coffee => (<><div className="card">
         <Coffee key={coffee.id} coffee={coffee} /> </div>
         </> ))}
       </div>
+      </>
   );
 }
 
