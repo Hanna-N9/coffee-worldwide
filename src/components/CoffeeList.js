@@ -3,7 +3,7 @@ import Coffee from "./Coffee";
 import { useOutletContext } from "react-router-dom";
 
 function CoffeeList() {
-  const {coffees, setCoffees} = useOutletContext();
+  const { coffees } = useOutletContext();
 
   return (
     <div>
