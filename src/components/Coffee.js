@@ -1,30 +1,19 @@
-import React, { useState } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
 
 function Coffee({ coffee }) {
-  const [isClicked, setAsClicked] = useState(false);
-
-  function handleClick() {
-    setAsClicked(isClicked => !isClicked);
-  }
-
   return (
     <div>
       <h3>{coffee.name}</h3>
-      <img
-        src={coffee.image}
-        alt={coffee.name}
-        style={{ width: 200, height: 200 }}
-        onClick={handleClick}
-      />
-      {isClicked ? (
-        <>
-          <p>{coffee.recipeLink}</p>
-          <p>{coffee.recipe}</p>
-          <p>{coffee.caffeine}</p>
-          <p>{coffee.roast}</p>
-          <p>{coffee.originate}</p>
-        </>
-      ) : null}
+      <div id="card">
+        <Link to={`/coffee/${coffee.id}`}>
+          <img
+            src={coffee.image}
+            alt={coffee.name}
+            style={{ width: 200, height: 200 }}
+          />
+        </Link>
+      </div>
     </div>
   );
 }
