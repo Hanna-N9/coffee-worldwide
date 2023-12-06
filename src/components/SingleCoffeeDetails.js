@@ -16,16 +16,42 @@ function SingleCoffeeDetails() {
 
   return (
     <>
-      <div>
-        <img src={coffee.image} alt={coffee.name} />
+      <div className="headerSpace">
+        <br />
+        <div>
+        <img 
+          src={coffee.image} 
+          alt={coffee.name} 
+          style={{width: "300px", height: "300px", borderRadius: "10px"}}
+          />
+          </div>
+          <br />
         <div>
           <b>Name:</b> {coffee.name}
         </div>
+        <br />
         <div>
           <b>Recipe:</b> {coffee.recipe}
         </div>
+        <br />
         <div>
-          <b>Link to recipe:</b> {coffee.recipeLink}
+          <b>Caffeine level:</b> {coffee.caffeine}
+        </div>
+        <br />
+        <div>
+          <b>Roast type:</b> {coffee.roast}
+        </div>
+        <br />
+        <div>
+          <b>Coffee shop:</b> {coffee.coffeeshop}
+        </div>
+        <br />
+        <div>
+          <b>Location:</b> {coffee.location}
+        </div>
+        <br />
+        <div>
+          <b>Rating:</b> {coffee.caffeine}
         </div>
       </div>
     </>

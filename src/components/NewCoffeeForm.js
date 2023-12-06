@@ -4,12 +4,12 @@ import { useOutletContext } from "react-router-dom";
 function NewCoffeeForm() {
   const [formData, setFormData] = useState({
     name: "",
-    recipelink: "",
     recipe: "",
     image: "",
     caffeine: "",
     roast: "",
-    originate: ""
+    coffeeshop: "",
+    location: ""
   })
 
   const {filteredCoffees, setCoffees} = useOutletContext();
@@ -19,12 +19,12 @@ function NewCoffeeForm() {
 
     const newCoffee = {
       name: formData.name,
-      recipeLink: formData.recipelink,
       recipe: formData.recipe,
       image: formData.image,
       caffeine: formData.caffeine,
       roast: formData.roast,
-      originate: formData.originate
+      coffeeshop: formData.coffeeshop,
+      location: formData.location
     }
 
     fetch("http://localhost:3001/coffee", {
@@ -38,13 +38,14 @@ function NewCoffeeForm() {
     .then((data) => setCoffees([...filteredCoffees, data]))
     setFormData({
         name: "",
-        recipelink: "",
         recipe: "",
         image: "",
         caffeine: "",
         roast: "",
-        originate: ""
+        coffeeshop: "",
+        location: ""
     })
+    alert(`You've submitted a new beverage!`);
   }
 
   function handleChange(e){
@@ -65,16 +66,6 @@ function NewCoffeeForm() {
           name="name" 
           placeholder="Coffee Name"
           value={formData.name}
-          onChange={handleChange}
-        />
-        </div>
-        <div className="newcoffeeform">
-        <input 
-          className="coffeeinput"
-          type="text" 
-          name="recipelink" 
-          placeholder="Recipe Link"
-          value={formData.recipelink}
           onChange={handleChange}
         />
         </div>
@@ -122,9 +113,19 @@ function NewCoffeeForm() {
         <input 
           className="coffeeinput"
           type="text" 
-          name="originate" 
-          placeholder="Country of Origin"
-          value={formData.originate}
+          name="coffeeshop" 
+          placeholder="Coffee Shop"
+          value={formData.coffeeshop}
+          onChange={handleChange}
+        />
+        </div>
+        <div className="newcoffeeform">
+        <input 
+          className="coffeeinput"
+          type="text" 
+          name="location" 
+          placeholder="Location"
+          value={formData.location}
           onChange={handleChange}
         />
         </div>
