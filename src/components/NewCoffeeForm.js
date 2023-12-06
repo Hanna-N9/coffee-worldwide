@@ -12,7 +12,7 @@ function NewCoffeeForm() {
     originate: ""
   })
 
-  const {coffees, setCoffees} = useOutletContext();
+  const {filteredCoffees, setCoffees} = useOutletContext();
 
   function handleSubmit(e){
     e.preventDefault();
@@ -35,7 +35,7 @@ function NewCoffeeForm() {
       body: JSON.stringify(newCoffee)
     })
     .then((res) => res.json())
-    .then((data) => setCoffees([...coffees, data]))
+    .then((data) => setCoffees([...filteredCoffees, data]))
     setFormData({
         name: "",
         recipelink: "",
