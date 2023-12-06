@@ -6,7 +6,7 @@ function SingleCoffeeDetails() {
   const coffee = coffees.find(c => c.id == id)
   const nav = useNavigate()
 
-  const renderCoffeeCups = (rating) => {
+  const renderCoffeeCups = rating => {
     const coffeeCupEmoji = "☕️";
     return coffeeCupEmoji.repeat(rating);
   };
@@ -30,13 +30,13 @@ function SingleCoffeeDetails() {
       <div className="headerSpace">
         <br />
         <div>
-        <img 
-          src={coffee.image} 
-          alt={coffee.name} 
-          style={{width: "300px", height: "300px", borderRadius: "10px"}}
+          <img
+            src={coffee.image}
+            alt={coffee.name}
+            style={{ width: "300px", height: "300px", borderRadius: "10px" }}
           />
-          </div>
-          <br />
+        </div>
+        <br />
         <div>
           <b>Name:</b> {coffee.name}
         </div>
@@ -46,7 +46,7 @@ function SingleCoffeeDetails() {
         </div>
         <br />
         <div>
-          <b>Caffeine level:</b> {coffee.caffeine}
+          <b>Caffeine level:</b> {coffee.caffeine} mg
         </div>
         <br />
         <div>
