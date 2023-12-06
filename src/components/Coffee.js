@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../App.css";
 
 function Coffee({ coffee }) {
   const [isClicked, setAsClicked] = useState(false);
@@ -8,9 +9,9 @@ function Coffee({ coffee }) {
   }
 
   return (
-    <div>
-      <h3>{coffee.name}</h3>
-      <img
+      <div>
+      <h3 className="headerSpace">{coffee.name}</h3>
+      <img className="cardImg"
         src={coffee.image}
         alt={coffee.name}
         style={{ width: 200, height: 200 }}
@@ -25,7 +26,7 @@ function Coffee({ coffee }) {
           <p>{coffee.originate}</p>
         </>
       ) : null}
-    </div>
+      </div>
   );
 }
 

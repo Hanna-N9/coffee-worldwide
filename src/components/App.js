@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Outlet } from "react-router-dom";
-import Header from "./Header";
 import NavBar from "./NavBar";
+import Header from "./Header";
 import "@fontsource/league-spartan"; // Defaults to weight 400
 import "@fontsource/league-spartan/400.css"; // Specify weight
 
@@ -24,10 +24,10 @@ function App() {
   )
 
   return (
-    <div className="App">
-      <Header />
-      <NavBar />
-      <Outlet context={{filteredCoffees, setCoffees, handleSearch}} />
+    <div className="App" style={{ display: 'inline'}}> 
+    <Header />
+    <NavBar /> 
+      <Outlet context={{coffees, setCoffees}} />
     </div>
   );
 }
