@@ -41,22 +41,28 @@ code {
   font-size: 2rem;
   border-radius: 15px;
   margin-right: 10px;
-  
-
-  
-
 }
 
 .active {
   color: gray;
 }
 
-
 .newcoffeeform {
   margin-bottom: 10px;
   font-family: "League Spartan";
   border-radius: 15px;
 }
+
+.newcoffeeform span {
+  cursor: pointer;
+  font-size: 24px;
+  margin: 0 5px; /* Add margin for spacing between cups */
+}
+
+.newcoffeeform span.selected {
+  color: darkred; /* Set color to darkred when selected */
+}
+
 .headerSpace{
   padding-top: 20px;
 }

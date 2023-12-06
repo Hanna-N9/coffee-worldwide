@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useOutletContext } from "react-router-dom";
+import { ReactComponent as CoffeeIcon } from './coffeecup.svg';
 
 function NewCoffeeForm() {
   const [formData, setFormData] = useState({
@@ -9,7 +10,8 @@ function NewCoffeeForm() {
     caffeine: "",
     roast: "",
     coffeeshop: "",
-    location: ""
+    location: "",
+    rating: 0
   })
 
   const {filteredCoffees, setCoffees} = useOutletContext();
@@ -24,7 +26,8 @@ function NewCoffeeForm() {
       caffeine: formData.caffeine,
       roast: formData.roast,
       coffeeshop: formData.coffeeshop,
-      location: formData.location
+      location: formData.location,
+      rating: formData.rating
     }
 
     fetch("http://localhost:3001/coffee", {
@@ -43,7 +46,8 @@ function NewCoffeeForm() {
         caffeine: "",
         roast: "",
         coffeeshop: "",
-        location: ""
+        location: "",
+        rating: 0
     })
     alert(`You've submitted a new beverage!`);
   }
@@ -55,9 +59,16 @@ function NewCoffeeForm() {
     })
   }
 
+  function handleRatingClick(rating) {
+    setFormData({
+      ...formData,
+      rating,
+    });
+  }
+
   return (
     <div onSubmit={handleSubmit}>
-      <h2 className="headerSpace">Add a new coffee beverage!</h2>
+      <h2 className="headerSpace">Add your latest coffee beverage!</h2>
       <form>
       <div className="newcoffeeform">
         <input 
@@ -129,6 +140,25 @@ function NewCoffeeForm() {
           onChange={handleChange}
         />
         </div>
+        <div className="newcoffeeform">
+          <label htmlFor="rating">Rating: </label>
+          {[1, 2, 3, 4, 5].map((value) => (
+            <span
+              key={value}
+              role="img"
+              aria-label={`Coffee Cup ${value}`}
+              onClick={() => handleRatingClick(value)}
+              className={formData.rating >= value ? "selected" : ""}
+            >
+            <CoffeeIcon
+              width="1em"
+              height="1em"
+              fill={formData.rating >= value ? "black" : "lightgrey"}
+            />
+            </span>
+          ))}
+        </div>
+        <br />
         <button type="submit">Add New Coffee</button>
       </form>
     </div>

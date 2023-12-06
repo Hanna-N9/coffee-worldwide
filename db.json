@@ -8,7 +8,8 @@
       "caffeine": 40,
       "roast": "dark",
       "coffeeshop": "Ninth Street Espresso",
-      "location": "New York City, NY"
+      "location": "New York City, NY",
+      "rating": 3
     },
     {
       "id": 2,
@@ -18,7 +19,8 @@
       "caffeine": 30,
       "roast": "medium",
       "coffeeshop": "Grand Central Coffee Company",
-      "location": "New York City, NY"
+      "location": "New York City, NY",
+      "rating": 2
     },
     {
       "id": 3,
@@ -28,7 +30,8 @@
       "caffeine": 40,
       "roast": "medium",
       "coffeeshop": "ABONAVIDA",
-      "location": "Madrid, Spain"
+      "location": "Madrid, Spain",
+      "rating": 4
     },
     {
       "id": 4,
@@ -38,7 +41,8 @@
       "caffeine": 35,
       "roast": "medium",
       "coffeeshop": "Er Baretto",
-      "location": "Rome, Italy"
+      "location": "Rome, Italy",
+      "rating": 2
     },
     {
       "id": 5,
@@ -48,7 +52,8 @@
       "caffeine": 30,
       "roast": "medium",
       "coffeeshop": "Mozart Cafe",
-      "location": "Rome, Italy"
+      "location": "Rome, Italy",
+      "rating": 1
     },
     {
       "id": 6,
@@ -58,7 +63,8 @@
       "caffeine": 40,
       "roast": "medium",
       "coffeeshop": "Coffee Alchemy",
-      "location": "NSW, Australia"
+      "location": "NSW, Australia",
+      "rating": 1
     },
     {
       "id": 7,
@@ -68,7 +74,8 @@
       "caffeine": 60,
       "roast": "medium",
       "coffeeshop": "AKKOO COFFEE",
-      "location": "Addis Ababa, Ethiopia"
+      "location": "Addis Ababa, Ethiopia",
+      "rating": 4
     },
     {
       "id": 8,
@@ -78,7 +85,8 @@
       "caffeine": 30,
       "roast": "medium",
       "coffeeshop": "Caffe Florian",
-      "location": "Venice, Italy"
+      "location": "Venice, Italy",
+      "rating": 5
     },
     {
       "id": 9,
@@ -88,7 +96,8 @@
       "caffeine": 35,
       "roast": "medium",
       "coffeeshop": "Matamata Coffee",
-      "location": "Paris, France"
+      "location": "Paris, France",
+      "rating": 3
     },
     {
       "id": 10,
@@ -98,7 +107,8 @@
       "caffeine": 40,
       "roast": "medium",
       "coffeeshop": "Lomi",
-      "location": "Paris, France"
+      "location": "Paris, France",
+      "rating": 2
     },
     {
       "id": 11,
@@ -108,7 +118,8 @@
       "caffeine": 60,
       "roast": "medium",
       "coffeeshop": "CoffeeCo at Cloud Nine",
-      "location": "Dublin, Ireland"
+      "location": "Dublin, Ireland",
+      "rating": 3
     },
     {
       "id": 12,
@@ -118,7 +129,8 @@
       "caffeine": 60,
       "roast": "medium",
       "coffeeshop": "Mandabatmaz",
-      "location": "Istanbul, Turkey"
+      "location": "Istanbul, Turkey",
+      "rating": 4
     },
     {
       "id": 13,
@@ -128,7 +140,8 @@
       "caffeine": 60,
       "roast": "medium",
       "coffeeshop": "OKKIO",
-      "location": "Ho Chi Minh City, Vietnam"
+      "location": "Ho Chi Minh City, Vietnam",
+      "rating": 5
     },
     {
       "id": 14,
@@ -138,7 +151,8 @@
       "caffeine": 60,
       "roast": "medium",
       "coffeeshop": "Little Nap Coffee Stand",
-      "location": "Tokyo, Japan"
+      "location": "Tokyo, Japan",
+      "rating": 1
     },
     {
       "id": 15,
@@ -148,7 +162,8 @@
       "caffeine": 100,
       "roast": "medium",
       "coffeeshop": "Fuglen Tokyo",
-      "location": "Tokyo, Japan"
+      "location": "Tokyo, Japan",
+      "rating": 3
     },
     {
       "id": 16,
@@ -158,7 +173,8 @@
       "caffeine": 60,
       "roast": "medium",
       "coffeeshop": "Elm Coffee Roasters",
-      "location": "Seattle, WA"
+      "location": "Seattle, WA",
+      "rating": 4
     }
   ]
 }

@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import { Link } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 
 function SingleCoffeeDetails() {
   const [coffee, setCoffee] = useState([]);
@@ -11,6 +10,11 @@ function SingleCoffeeDetails() {
       .then(res => res.json())
       .then(setCoffee);
   }, [id]);
+
+  const renderCoffeeCups = (rating) => {
+    const coffeeCupEmoji = "☕️";
+    return coffeeCupEmoji.repeat(rating);
+  };
 
   <Link to={`/coffee/${coffee.id}/recipe`}>link</Link>;
 
@@ -51,7 +55,7 @@ function SingleCoffeeDetails() {
         </div>
         <br />
         <div>
-          <b>Rating:</b> {coffee.caffeine}
+          <b>Rating:</b> {renderCoffeeCups(coffee.rating)}
         </div>
       </div>
     </>
