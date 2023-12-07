@@ -35,6 +35,13 @@ code {
   height: auto;
 }
 
+.intro{
+  text-align: center;
+  max-height: 60px; 
+
+
+}
+
 .navLink {
   display: flex,inline;
   text-decoration: none;
