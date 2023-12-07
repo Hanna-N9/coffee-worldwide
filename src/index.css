@@ -5,6 +5,7 @@
 body {
   font-family: "League Spartan";
   margin: 0;
+  background-image: "../images.beans.png";
 }
 
 button {
@@ -112,7 +113,7 @@ button:hover {
 
 .intro {
   align-items: center;
-  background-color: rgb(226, 226, 226);
+  background-color: rgb(227, 227, 227);
   display: flex;
   flex-direction: column;
   margin: 50px auto;
@@ -144,6 +145,10 @@ button:hover {
   padding: 1rem;
   border-radius: 15px;
   text-decoration: none;
+}
+
+.navLink.active {
+  background-color: rgb(166, 160, 160);
 }
 
 .newcoffeeform {

@@ -18,10 +18,11 @@ function Search(){
                     borderRadius: "5px" }}
             onChange={handleSearch}
         />
-        <button 
+        <br />
+        <button style={{marginTop: "10px"}}
             className="sort-button"
             onClick={() => setSortName("name")}
-        >Sort</button>
+        >Sort Alphabetically</button>
         </div>
         </>
     )  
