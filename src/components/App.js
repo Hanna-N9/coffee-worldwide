@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Outlet } from "react-router-dom";
 import NavBar from "./NavBar";
 import Header from "./Header";
-import "@fontsource/league-spartan"; // Defaults to weight 400
-import "@fontsource/league-spartan/400.css"; // Specify weight
+import "@fontsource/league-spartan";
+import "@fontsource/league-spartan/400.css";
 
 function App() {
   const [coffees, setCoffees] = useState([]);

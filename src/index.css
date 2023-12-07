@@ -1,71 +1,155 @@
-body {
-    font-family: "League Spartan";
-  }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.active {
+  background-color: gray;
 }
 
-#card img {
-  width: 200px;
-  height: 200px;
+body {
+  font-family: "League Spartan";
+  margin: 0;
+}
+
+button {
+  background: black;
+  border: none;
   border-radius: 10px;
-  /* Add any other image styles here */
+  color: white;
+  cursor: pointer;
+  font-family: "League Spartan";
+  font-size: 18px;
+  padding: 10px 20px;
+  width: 10%;
+}
+
+button:hover {
+  background: #333;
+  transform: scale(1.15);
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  margin-top: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.cardImg {
+  height: auto;
+  max-width: 100%;
 }
 
 .coffeeCard {
   display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px;
-   
-}
-
-.card{
-  border: 1px solid #ddd;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   padding: 20px;
-  text-align: center;
-  border-radius: 15px;
-  margin-top: 20px;
 }
 
-.cardImg{
-  max-width: 100%;
-  height: auto;
+.coffeeinput {
+  border-radius: 5px;
+  padding: 15px;
+  width: 35%;
 }
 
-.intro{
+.coffeeinput::placeholder {
+  font-family: "League Spartan";
+}
+
+.code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.closingintro,
+.openingintro {
+  margin: 0 auto;
   text-align: center;
-  max-height: 60px; 
+  width: 80%;
+}
 
+.error {
+  background-attachment: fixed;
+  background-image: url(./images/spilledcoffee.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 18.5% 0;
+  text-align: center;
+}
 
+#error button {
+  background-color: rgb(11, 36, 102);
+  cursor: pointer;
+  font-size: 1.4em;
+  line-height: 1.2;
+  transform: scale(1.15);
+  width: 40%;
+}
+
+#error h2 {
+  color: white;
+  font-size: 2em;
+}
+
+#error p {
+  color: red;
+  font-size: 1.9em;
+  font-weight: bold;
+}
+
+.header-container {
+  margin: 0 auto;
+  max-height: 50vh;
+  overflow: hidden;
+  width: 50%;
+}
+
+.headerSpace {
+  padding-top: 20px;
+}
+
+.intro {
+  align-items: center;
+  background-color: rgb(226, 226, 226);
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  overflow: hidden;
+  text-align: center;
+}
+
+.logo {
+  width: auto;
+}
+
+.main-error {
+  margin: 0 auto;
+  padding: 2%;
+  text-align: center;
+  width: 28%;
 }
 
 .navLink {
-  display: flex,inline;
-  text-decoration: none;
-  justify-content: space-between;
   align-items: center;
-  background-color: black; 
+  background-color: black;
   color: white;
-  gap: 2rem;
-  padding: 1rem;
-  list-style: none;
+  display: flex, inline;
   font-size: 2rem;
-  border-radius: 15px;
+  gap: 2rem;
+  justify-content: space-between;
+  list-style: none;
   margin-right: 10px;
-}
-
-.active {
-  background-color: gray;
-
+  padding: 1rem;
+  border-radius: 15px;
+  text-decoration: none;
 }
 
 .newcoffeeform {
+  border-radius: 15px;
   margin-bottom: 10px;
   font-family: "League Spartan";
-  border-radius: 15px;
 }
 
 .newcoffeeform span {
@@ -78,89 +162,70 @@ code {
   color: darkred;
 }
 
-.headerSpace{
-  padding-top: 20px;
+#card {
+  margin: auto;
+  width: 100%;
 }
 
-.coffeeinput {
-  width: 35%;
-  padding: 15px;
-  border-radius: 5px;
+#card:hover {
+  transform: scale(1.2);
 }
 
-.coffeeinput::placeholder {
-  font-family: "League Spartan"; 
-}
-
-button {
-  font-family: "League Spartan";
-  padding: 10px;
-  background: black;
-  color: white;
-  border: none;
-  font-size: 18px;
+#card img {
   border-radius: 10px;
-  width: 10%;
-  cursor: pointer;
+  height: 200px;
+  width: 200px;
 }
 
-button:hover {
-  background: #333;
-}
-
- #card:hover{
-   transform: scale(1.2); 
- }
- 
- #card{
-   width: 100%;
-   margin: auto;
- }
-
- #search::placeholder {
-  font-size: 16px;
-}
-
-#error{
+#error {
+  background-attachment: fixed;
   background-image: url(./images/spilledcoffee.jpeg);
   background-repeat: no-repeat;
-  background-attachment: fixed;  
   background-size: cover;
   padding: 18.5% 0;
   text-align: center;
- }
+}
 
- #main-error{
-  width:28%;
+#error button:hover {
+  transform: scale(1.15);
+}
+
+#error h2 {
+  color: white;
+  font-size: 2em;
+}
+
+#error p {
+  color: red;
+  font-size: 1.9em;
+  font-weight: bold;
+}
+
+#error button {
+  background-color: rgb(11, 36, 102);
+  cursor: pointer;
+  font-size: 1.4em;
+  line-height: 1.2;
+  width: 40%;
+}
+
+#main-error {
   text-align: center;
   padding: 2%;
   margin: 0 auto;
- }
+}
 
- #error h2{
-  color: white;
-  font-size: 2em;
-  
- }
- 
- #error p{
- font-size: 1.9em;
- color: red;
- font-weight: bold;
- }
-
- #error button{
-  background-color: rgb(11, 36, 102);
-  cursor: pointer;
-  width: 40%;
-  font-size: 1.4em;
-  line-height: 1.2;
- }
-  
- #error button:hover{
-  transform: scale(1.15); 
+#search::placeholder {
+  font-size: 16px;
 }
 
 .sort-button {
   margin-left: 10px;
+}
+
+.searchperfection,
+.brewvolution,
+.passport {
+  margin: 10px;
+  width: 30%;
 }

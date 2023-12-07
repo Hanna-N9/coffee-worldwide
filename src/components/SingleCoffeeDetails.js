@@ -27,7 +27,7 @@ function SingleCoffeeDetails() {
 
   return (
     <>
-      <div className="headerSpace">
+      <div className="headerSpace" id="singlecoffeedetails">
         <br />
         <div>
           <img
