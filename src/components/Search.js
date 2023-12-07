@@ -2,7 +2,7 @@ import React from "react";
 import { useOutletContext } from "react-router-dom";
 
 function Search() {
-  const { handleSearch, setSortName } = useOutletContext();
+  const { handleSearch } = useOutletContext();
 
   return (
     <>
@@ -11,7 +11,7 @@ function Search() {
         <input
           type="text"
           id="search"
-          placeholder="Search..."
+          placeholder="Search for a term..."
           style={{
             fontFamily: "League Spartan",
             width: "300px",
@@ -20,9 +20,6 @@ function Search() {
           }}
           onChange={handleSearch}
         />
-        <button className="sort-button" onClick={() => setSortName("name")}>
-          Sort
-        </button>
       </div>
     </>
   );
