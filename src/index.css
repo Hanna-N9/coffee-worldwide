@@ -1,10 +1,8 @@
-.active {
-  background-color: gray;
-}
-
 body {
   font-family: "League Spartan";
   margin: 0;
+  background-image: url(./images/coffee.jpg);
+  background-size: 30%;
 }
 
 button {
@@ -39,9 +37,8 @@ button:hover {
 
 .coffeeCard {
   display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  padding: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  gap: 0 1%; /* row, column */
 }
 
 .coffeeinput {
@@ -79,15 +76,6 @@ button:hover {
   text-align: center;
 }
 
-#error button {
-  background-color: rgb(11, 36, 102);
-  cursor: pointer;
-  font-size: 1.4em;
-  line-height: 1.2;
-  transform: scale(1.15);
-  width: 40%;
-}
-
 #error h2 {
   color: white;
   font-size: 2em;
@@ -104,24 +92,17 @@ button:hover {
   max-height: 50vh;
   overflow: hidden;
   width: 50%;
+  margin-bottom: 3%;
 }
 
 .headerSpace {
   padding-top: 20px;
-}
-
-.intro {
-  align-items: center;
-  background-color: rgb(226, 226, 226);
-  display: flex;
-  flex-direction: column;
-  margin: 50px auto;
-  overflow: hidden;
-  text-align: center;
+  font-size: 2.5em;
 }
 
 .logo {
-  width: auto;
+  width: 55%;
+  border-radius: 2em;
 }
 
 .main-error {
@@ -146,6 +127,10 @@ button:hover {
   text-decoration: none;
 }
 
+.active {
+  background-color: gray;
+}
+
 .newcoffeeform {
   border-radius: 15px;
   margin-bottom: 10px;
@@ -167,6 +152,14 @@ button:hover {
   width: 100%;
 }
 
+.card{
+  border: 1px solid #ddd;
+  padding: 0 0 9% 0; /* top, right, bottom, left */
+  text-align: center;
+  border-radius: 15px;
+  margin-top: 30px;
+ }
+
 #card:hover {
   transform: scale(1.2);
 }
@@ -176,6 +169,11 @@ button:hover {
   height: 200px;
   width: 200px;
 }
+
+#cardTitle{
+  font-size: 2em;
+  margin-bottom: 11%;
+  }
 
 #error {
   background-attachment: fixed;
@@ -201,22 +199,22 @@ button:hover {
   font-weight: bold;
 }
 
-#error button {
+#error button{
   background-color: rgb(11, 36, 102);
   cursor: pointer;
+  width: 12%;
   font-size: 1.4em;
   line-height: 1.2;
-  width: 40%;
+ }
+  
+ #error button:hover{
+  transform: scale(1.15); 
 }
 
 #main-error {
   text-align: center;
   padding: 2%;
   margin: 0 auto;
-}
-
-#search::placeholder {
-  font-size: 16px;
 }
 
 .sort-button {
@@ -229,3 +227,54 @@ button:hover {
   margin: 10px;
   width: 30%;
 }
+
+.intro, #singleFont{
+  background-color: tan;
+  margin: 0 auto;
+  margin-top: 2.5%;
+}
+
+.intro{
+  font-size: 2em;
+  padding: 2%;
+  width:80%;
+} 
+
+#singleFont{
+  width: 40%;
+  padding: 1%;
+  font-size: 2em;
+}
+
+input, #rating{
+  font-size: 1.5em;
+ }
+
+ .btn, .sort-button{
+  font-size: 1.4em;
+}
+
+#homeBtn{
+  font-size: 1em;
+  width: 20%;
+}
+
+#delete{
+margin-top: .5%;
+text-align: center;
+}
+
+h2, p, h1, h3, h4, #rating, #singleFont{
+  color: yellow;
+}
+
+#errorMark{
+  color:#ffffff7d;
+  background: none;
+}
+
+.singleMark{
+  background: none;
+  color: rgb(96, 90, 90);
+}
+
