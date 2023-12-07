@@ -3,7 +3,7 @@ import { useParams, useNavigate, useOutletContext } from "react-router-dom";
 function SingleCoffeeDetails() {
   const { handleDelete, coffees } = useOutletContext();
   const { id } = useParams();
-  const coffee = coffees.find(c => c.id === id);
+  const coffee = coffees.find(c => c.id == id);
   const nav = useNavigate();
 
   const renderCoffeeCups = rating => {
