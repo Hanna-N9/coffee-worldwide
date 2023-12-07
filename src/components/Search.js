@@ -2,7 +2,7 @@ import React from "react";
 import { useOutletContext } from "react-router-dom";
 
 function Search() {
-  const { handleSearch } = useOutletContext();
+  const { handleSearch, setSortName } = useOutletContext();
 
   return (
     <>
@@ -20,6 +20,9 @@ function Search() {
           }}
           onChange={handleSearch}
         />
+        <button className="sort-button" onClick={() => setSortName("name")}>
+          Sort
+        </button>
       </div>
     </>
   );
