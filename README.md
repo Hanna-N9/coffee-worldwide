@@ -1,6 +1,3 @@
-# Phase 2 Project
-
-
 # Bean There, Drank That
 
 Welcome to Bean There, Drank That - a coffee shop website showcasing diverse coffee drinks from around the world!
@@ -35,8 +32,10 @@ The project is structured with the following components:
 ## Getting Started
 
 1. Clone this repository.
-2. Install dependencies: `npm install`
-3. Run the application: `npm start`
+2. Open a terminal window to open this repository in your code editor
+3. Install dependencies: `npm install`
+4. Run the application: `npm start`
+5. Click a new terminal window to run `json-server --watch db. json`
 
 ## Contributing
 
@@ -50,6 +49,4 @@ Contributions are welcome! If you have any suggestions, bug reports, or improvem
 
 ## Acknowledgments
 
-- to our se-west-103023 cohort for their love and passion for all things coffee that inspired this app.
-
-
+- To our se-west-103023 cohort for their love and passion for all things coffee that inspired this app.
