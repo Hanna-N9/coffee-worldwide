@@ -1,6 +1,6 @@
-# Bean There, Drank That
+# Bean There, Drank That!
 
-Welcome to Bean There, Drank That - a coffee shop website showcasing diverse coffee drinks from around the world!
+Welcome to Bean There, Drank That! - a coffee shop website showcasing diverse coffee drinks from around the world!
 
 ## Overview
 
@@ -9,8 +9,9 @@ Bean There, Drank That is a React web application that provides information abou
 ## Features
 
 - Browse a collection of coffee drinks from different regions.
-- Search and filter drinks by name or region.
+- Search and filter drinks by name.
 - Add new coffee drinks using the submission form.
+- Click a rating for a new coffee drink 
 - (Optional) Explore an ordering service for your favorite drinks.
 
 ## Project Structure
@@ -22,6 +23,7 @@ The project is structured with the following components:
 - `Search`: Component for searching and filtering drinks.
 - `NewCoffeeForm`: Form for submitting new coffee drinks.
 - `CoffeeList` and `Coffee`: Components for displaying a list of coffee drinks and individual drinks, respectively.
+- `SingleCoffeeDetails`: Component for identifying /:id to get a specific coffee's details
 
 ### Additional Components (if applicable)
 
@@ -34,8 +36,9 @@ The project is structured with the following components:
 1. Clone this repository.
 2. Open a terminal window to open this repository in your code editor
 3. Install dependencies: `npm install`
-4. Run the application: `npm start`
-5. Click a new terminal window to run `json-server --watch db. json`
+5. Run the application: `npm start` which should open http://localhost:3000
+6. Click a new terminal window to run `json-server --watch db. json`, which you can check on http://localhost:3001/coffee for coffee API
+   - http://localhost:3000 is fetching from http://localhost:3001/coffee which is required to run the application
 
 ## Contributing
 

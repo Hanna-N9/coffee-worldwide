@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "../App.css";
 
 function Coffee({ coffee }) {
+
   return (
     <div>
       <h3 id="cardTitle">{coffee.name}</h3>
@@ -13,6 +14,7 @@ function Coffee({ coffee }) {
       </div>
     </div>
   );
+  
 }
 
 export default Coffee;

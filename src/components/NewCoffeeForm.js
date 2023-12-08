@@ -18,7 +18,7 @@ function NewCoffeeForm() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    nav("/coffee");
+    // nav("/coffee");
 
     const newCoffee = {
       name: formData.name,
