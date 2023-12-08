@@ -8,9 +8,10 @@ function ErrorPage() {
     <div id="error">
       <div id="main-error">
         <h2>Spilled Coffee?</h2>
-        <h2>Sorry, something went wrong!</h2>
+        <h2>Sorry, it went wrong!</h2>
         <p>
-          ~ <i>{error.statusText || error.message}</i> ~
+          <mark id="errorMark"> Error Message: </mark>
+          <i>{error.statusText || error.message}</i>
         </p>
         <button onClick={() => navigate("/")}>
           GO BACK <br /> coffee is my fuel!
@@ -18,7 +19,6 @@ function ErrorPage() {
       </div>
     </div>
   );
-  
 }
 
 export default ErrorPage;

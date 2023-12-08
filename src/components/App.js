@@ -16,41 +16,40 @@ function App() {
       .then(data => setCoffees(data));
   }, []);
 
-  function handleSearch(e){
-    setSearch(e.target.value)
+  function handleSearch(e) {
+    setSearch(e.target.value);
   }
 
-  const filteredCoffees = coffees.filter((c) => 
-    c.name.toLowerCase().includes(search.toLowerCase())
-  )
+  const filteredCoffees = coffees.filter(c =>
+    c.name.toLowerCase().includes(search.toLowerCase()),
+  );
 
-  if(sortName === "name"){
-    filteredCoffees.sort((a, b) =>
-    a.name.localeCompare(b.name))
+  if (sortName === "name") {
+    filteredCoffees.sort((a, b) => a.name.localeCompare(b.name));
   }
 
-  function handleDelete(id){
-		const updatedCoffees = coffees.filter((drink) => drink.id != id)
-		setCoffees(updatedCoffees)
-	}
+  function handleDelete(id) {
+    const updatedCoffees = coffees.filter(drink => drink.id !== id);
+    setCoffees(updatedCoffees);
+  }
 
   return (
-    <div className="App" style={{ display: 'inline'}}> 
-    <Header />
-    <NavBar /> 
-      <Outlet 
-        context=
-        {{coffees, 
-          filteredCoffees, 
-          setCoffees, 
+    <div className="App" style={{ display: "inline" }}>
+      <Header />
+      <NavBar />
+      <Outlet
+        context={{
+          coffees,
+          filteredCoffees,
+          setCoffees,
           handleSearch,
           sortName,
           setSortName,
-          handleDelete
-        }} />
+          handleDelete,
+        }}
+      />
     </div>
   );
-  
 }
 
 export default App;
