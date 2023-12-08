@@ -37,6 +37,7 @@
       "id": 4,
       "name": "Cappuccino",
       "recipeLink": "https://www.caffesociety.co.uk/how-to-make-a-cappuccino",
+      "recipe": "1 shot of espresso, 1 shot of steamed milk, and 1 tablespoon of foam",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Cappuccino_at_Sightglass_Coffee.jpg/1200px-Cappuccino_at_Sightglass_Coffee.jpg",
       "caffeine": 35,
       "roast": "Medium",
