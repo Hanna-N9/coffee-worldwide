@@ -11,7 +11,8 @@ Bean There, Drank That is a React web application that provides information abou
 - Browse a collection of coffee drinks from different regions.
 - Search and filter drinks by name.
 - Add new coffee drinks using the submission form.
-- Click a rating for a new coffee drink 
+- Click a rating for a new coffee drink
+- An option to delete an individual coffee drink via id
 - (Optional) Explore an ordering service for your favorite drinks.
 
 ## Project Structure
