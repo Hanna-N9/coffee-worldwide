@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
-import Gif from "../images/Bean.mp4";
+import Gif from "../images/BeanThere.mp4";
 
 function Header() {
   const videoRef = useRef(null);

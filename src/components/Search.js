@@ -20,12 +20,15 @@ function Search() {
           }}
           onChange={handleSearch}
         />
-        <button className="sort-button" onClick={() => setSortName("name")}>
-          Sort
-        </button>
-      </div>
-    </>
-  );
+        <br />
+        <button style={{marginTop: "10px"}}
+            className="sort-button"
+            onClick={() => setSortName("name")}
+        >Sort Alphabetically</button>
+        </div>
+        </>
+    )  
+
 }
 
 export default Search;
