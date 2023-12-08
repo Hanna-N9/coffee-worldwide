@@ -10,6 +10,7 @@ Bean There, Drank That is a React web application that provides information abou
 
 - Browse a collection of coffee drinks from different regions.
 - Search and filter drinks by name.
+- Sort coffee drinks' names in alphabetical order
 - Add new coffee drinks using the submission form.
 - Click a rating for a new coffee drink
 - An option to delete an individual coffee drink via id
