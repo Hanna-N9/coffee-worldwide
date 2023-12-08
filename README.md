@@ -1,6 +1,6 @@
-# Bean There, Drank That
+# Bean There, Drank That!
 
-Welcome to Bean There, Drank That - a coffee shop website showcasing diverse coffee drinks from around the world!
+Welcome to Bean There, Drank That! - a coffee shop website showcasing diverse coffee drinks from around the world!
 
 ## Overview
 
