@@ -49,4 +49,5 @@ Contributions are welcome! If you have any suggestions, bug reports, or improvem
 
 ## Acknowledgments
 
-- To our WEST-SE-103023 cohort for their love and passion for all things coffee that inspired this app.
+- To our WEST-SE-103023 cohort, for their love and passion for coffee that inspired this app.
+
