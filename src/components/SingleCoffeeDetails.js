@@ -33,7 +33,7 @@ function SingleCoffeeDetails() {
           <img
             src={coffee.image}
             alt={coffee.name}
-            style={{ width: "350px", height: "350px", borderRadius: "10px" }}
+            style={{ width: "300px", height: "300px", borderRadius: "10px" }}
           />
         </div>
       </div>

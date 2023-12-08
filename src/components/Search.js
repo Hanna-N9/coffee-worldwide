@@ -11,7 +11,7 @@ function Search() {
         <input
           type="text"
           id="search"
-          placeholder="Search for a term..."
+          placeholder="Search for beverages..."
           style={{
             fontFamily: "League Spartan",
             width: "300px",

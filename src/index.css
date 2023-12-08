@@ -1,7 +1,7 @@
 body {
   font-family: "League Spartan";
   margin: 0;
-  background-color: beige;
+  background-color: rgb(255, 255, 255);
 }
 
 button {
@@ -27,6 +27,8 @@ button:hover {
   margin-top: 20px;
   padding: 20px;
   text-align: center;
+  box-shadow: 5px 1px 15px 5px rgb(178, 178, 178);
+
 }
 
 .cardImg {
@@ -36,8 +38,9 @@ button:hover {
 
 .coffeeCard {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 0 1%; /* row, column */
+  
 }
 
 .coffeeinput {
@@ -96,7 +99,7 @@ button:hover {
 
 .headerSpace {
   padding-top: 20px;
-  font-size: 2.5em;
+  font-size: 2em;
 }
 
 .logo {
@@ -170,7 +173,7 @@ button:hover {
 }
 
 #cardTitle{
-  font-size: 2em;
+  font-size: 1.5em;
   margin-bottom: 11%;
   }
 
@@ -234,7 +237,7 @@ button:hover {
 }
 
 .intro{
-  font-size: 2em;
+  font-size: 1.5em;
   padding: 2%;
   width:80%;
 } 
@@ -271,11 +274,4 @@ text-align: center;
 .singleMark{
   color:#918e8e;
   background: none;
-}
-
-#card img {
-  width: 380px;
-  height: 380px;
-  border-radius: 10px;
-  box-shadow: 10px 2px 30px 10px rgb(255, 140, 0);
 }
