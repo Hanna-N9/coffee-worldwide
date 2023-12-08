@@ -229,19 +229,20 @@ button:hover {
 .passport {
   margin: 10px;
   width: 30%;
+  border: solid rgb(149, 147, 147);
+  border-radius: 10px;
+  padding: 10px;
 }
 
 .intro{
-  background-color: white;
   margin: 0 auto;
   margin-top: 2.5%;
-}
-
-.intro{
+  border-radius: 10px;
   font-size: 1.5em;
   padding: 2%;
   width:80%;
-} 
+  background-color: rgb(227, 227, 227);
+}
 
 #singleFont{
   width: 40%;

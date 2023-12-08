@@ -16,7 +16,7 @@ function Search() {
             fontFamily: "League Spartan",
             width: "300px",
             height: "40px",
-            borderRadius: "5px",
+            borderRadius: "10px",
           }}
           onChange={handleSearch}
         />

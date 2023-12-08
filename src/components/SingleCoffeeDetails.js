@@ -22,7 +22,7 @@ function SingleCoffeeDetails() {
   };
 
   if (!coffee) {
-    return <p>Loading...</p>;
+    return <h2>Loading...</h2>;
   }
 
   return (
