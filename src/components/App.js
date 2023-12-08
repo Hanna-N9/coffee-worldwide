@@ -29,7 +29,7 @@ function App() {
   }
 
   function handleDelete(id) {
-    const updatedCoffees = coffees.filter(drink => drink.id !== id);
+    const updatedCoffees = coffees.filter(drink => drink.id !== parseInt(id));
     setCoffees(updatedCoffees);
   }
 
