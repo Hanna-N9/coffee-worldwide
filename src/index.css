@@ -94,7 +94,7 @@ button:hover {
   max-height: 50vh;
   overflow: hidden;
   width: 50%;
-  margin-bottom: 3%;
+  margin-bottom: 1.5%;
 }
 
 .headerSpace {
@@ -253,8 +253,15 @@ input, #rating{
   font-size: 1.5em;
  }
 
- .btn, .sort-button{
+ .sort-button{
   font-size: 1.4em;
+  width: 13%;
+}
+
+.btn{
+  font-size: 1.5em;
+  width: 13%;
+  margin-bottom: .7%;
 }
 
 #homeBtn{
@@ -268,7 +275,7 @@ text-align: center;
 }
 
 #errorMark{
-  color:#ffffff7d;
+  color:rgba(255, 255, 255, 0.784);
   background: none;
 }
 
