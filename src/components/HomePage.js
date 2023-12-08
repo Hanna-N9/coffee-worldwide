@@ -5,7 +5,7 @@ function HomePage() {
   const navigate = useNavigate();
   return (
     <>
-      <div className="intro">
+      <div className="intro" style={{backgroundColor: "rgb(227, 227, 227)"}}>
         <div className="openingintro">
           <h1 className="headerSpace">Welcome to Bean There, Drank That!</h1>
           <p>

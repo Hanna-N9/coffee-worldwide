@@ -99,16 +99,7 @@ button:hover {
 
 .headerSpace {
   padding-top: 20px;
-}
-
-.intro {
-  align-items: center;
-  background-color: rgb(227, 227, 227);
-  display: flex;
-  flex-direction: column;
-  margin: 50px auto;
-  overflow: hidden;
-  text-align: center;
+  font-size: 2em;
 }
 
 .logo {
@@ -138,8 +129,9 @@ button:hover {
   text-decoration: none;
 }
 
-.navLink.active {
-  background-color: rgb(166, 160, 160);
+.active {
+  background-color: rgb(227, 227, 227);
+  color: black;
 }
 
 .newcoffeeform {
