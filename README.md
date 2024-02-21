@@ -39,7 +39,7 @@ The project is structured with the following components:
 2. Open a terminal window to open this repository in your code editor
 3. Install dependencies: `npm install`
 5. Run the application: `npm start` which should open http://localhost:3000
-6. Click a new terminal window to run `json-server --watch db. json`, which you can check on http://localhost:3001/coffee for coffee API
+6. Click a new terminal window to run `json-server --watch db.json`, which you can check on http://localhost:3001/coffee for coffee API
    - http://localhost:3000 is fetching from http://localhost:3001/coffee which is required to run the application
 
 ## Contributing
